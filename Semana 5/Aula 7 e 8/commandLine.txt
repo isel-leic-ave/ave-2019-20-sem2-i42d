@@ -1,0 +1,6 @@
+
+Após compilar, na linha de comandos dentro da diretoria bin/Degug fazer:
+
+// ILDASM
+ildasm /text <Nome Assembly>.exe > dump.il
+
