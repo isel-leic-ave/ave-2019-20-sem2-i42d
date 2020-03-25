@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Webao.HttpRequest" Collapsed="true">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAABAAAAAAAACAAAAAAAgCAgABAAAAAA=</HashCode>
+      <FileName>HttpRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Webao.AbstractAccessObject">
+    <Position X="5" Y="2.75" Width="2.75" />
+    <Members>
+      <Method Name="Path" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAIAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AbstractAccessObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="req" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Webao.WebaoBuilder">
+    <Position X="0.5" Y="2.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebaoBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Webao.IRequest">
+    <Position X="8.75" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAACAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>IRequest.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

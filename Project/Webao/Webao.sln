@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webao", "Webao\Webao.csproj", "{98E66F08-5B55-4757-9F8D-EC1C7A38FF12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebaoTestProject", "WebaoTestProject\WebaoTestProject.csproj", "{929F21F8-10D8-4A70-B2DD-A8DAF4432727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98E66F08-5B55-4757-9F8D-EC1C7A38FF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E66F08-5B55-4757-9F8D-EC1C7A38FF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E66F08-5B55-4757-9F8D-EC1C7A38FF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E66F08-5B55-4757-9F8D-EC1C7A38FF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929F21F8-10D8-4A70-B2DD-A8DAF4432727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929F21F8-10D8-4A70-B2DD-A8DAF4432727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929F21F8-10D8-4A70-B2DD-A8DAF4432727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929F21F8-10D8-4A70-B2DD-A8DAF4432727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F118F28-468A-47EA-ABB7-3EEBBE787684}
+	EndGlobalSection
+EndGlobal
