@@ -19,7 +19,9 @@ public class WebaoArtist : AbstractAccessObject
         ProcessCustomAttributes();
 
     }
-
+    // Example to how process custom attribute
+    // But you should use a type cache to perform reflection
+    // only once or minimize its use
     private void ProcessCustomAttributes()
     {
         // Get type
