@@ -8,8 +8,12 @@ namespace WebaoTestProject
     [TestFixture]
     public class AccessObjectTest
     {
-        static readonly WebaoArtist artistWebao = (WebaoArtist) WebaoBuilder.Build(typeof(WebaoArtist), new HttpRequest());
-        static readonly WebaoTrack trackWebao = (WebaoTrack) WebaoBuilder.Build(typeof(WebaoTrack), new HttpRequest());
+        //static readonly WebaoArtist artistWebao = (WebaoArtist) WebaoBuilder.Build(typeof(WebaoArtist), new HttpRequest());
+        //static readonly WebaoTrack trackWebao = (WebaoTrack) WebaoBuilder.Build(typeof(WebaoTrack), new HttpRequest());
+
+        static readonly WebaoArtist artistWebao = (WebaoArtist)WebaoBuilder.Build(typeof(WebaoArtist), new LastfmMockRequest());
+        static readonly WebaoTrack trackWebao = (WebaoTrack)WebaoBuilder.Build(typeof(WebaoTrack), new LastfmMockRequest());
+
 
 
         [Test]
