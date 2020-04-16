@@ -33,11 +33,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Code\Log\GenLog.cs" />
-    <Compile Include="Code\Log\Log.cs" />
-    <Compile Include="Code\Log\RefLog.cs" />
+    <Compile Include="Code\Logger\GenLog.cs" />
+    <Compile Include="Code\Logger\Log.cs" />
+    <Compile Include="Code\Logger\RefLog.cs" />
     <Compile Include="Code\UseLog\UseLog.cs" />
-    <Compile Include="Code\Log\LoggerForInfo.cs" />
+    <Compile Include="Code\Logger\LoggerForInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GeneratedDLLs\LoggerForInfo.il" />
