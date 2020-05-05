@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Aulas1617.EqualsandGetHashCode
 {
-
+    // Note that Book is sealed
     public sealed class Book
     {
         private readonly string isbn;
@@ -59,7 +59,7 @@ namespace Aulas1617.EqualsandGetHashCode
             // Swing Tutorial, 2nd edition
 
             // In 1., equal but distinct objects have different addresses (hash codes)
-            // In 2., equal but distinct objects have the same hash codes
+            // In 2., equal but distinct objects have the same hash codes - OK
             Book book1 = new Book("0201914670");
             Book book2 = new Book("0201914670");
 

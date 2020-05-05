@@ -38,6 +38,10 @@
     <Compile Include="1 - Identity and Equality\opEquality.cs" />
     <Compile Include="2 - Equals and GetHashCode\EqualsAndGetHashCode.cs" />
     <Compile Include="2 - Equals and GetHashCode\HashCode.cs" />
+    <Compile Include="3 - Box ValueTypes\V.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3 - Box ValueTypes\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

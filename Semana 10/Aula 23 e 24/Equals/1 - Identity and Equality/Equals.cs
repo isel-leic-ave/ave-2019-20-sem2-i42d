@@ -78,8 +78,8 @@ namespace Equals
 
 			Console.WriteLine("[Point3D] Testing if types are compatible");
             Console.WriteLine("[Point3D] (this.GetType() == obj.GetType()) - " + this.GetType() + " == " + obj.GetType() + "?");
-            if (obj.GetType() == typeof(Point3D)) // Aqui pode usar typeof pois a classe Point3D é sealed
-            //if (this.GetType() == obj.GetType()) // OK
+            //if (obj.GetType() == typeof(Point3D)) // Aqui pode usar typeof pois a classe Point3D é sealed
+            if (this.GetType() == obj.GetType()) // OK
 			// Poderia usar-se o operador as em alternativa.
             {
 				Point3D p = (Point3D)obj;
@@ -94,7 +94,7 @@ namespace Equals
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 			///////////////////////////////////////////////////
 			// Exemplo 1

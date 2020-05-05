@@ -4,6 +4,7 @@ using System.Text;
 
 namespace EqualsAndGetHashCode
 {
+    // Note that the class is sealed
     sealed class Point
     {
         // Implementation 1-3 
@@ -37,6 +38,10 @@ namespace EqualsAndGetHashCode
             }
             return false;
         }
+
+        /// 
+        /// Regra: o1.Equals(o2) == true => o1.GetHashCode() == o2.GetHashCode()
+        /// 
 
         public override int GetHashCode()
         {
@@ -139,12 +144,12 @@ namespace EqualsAndGetHashCode
             // Implementation 2.
             //p1 = (1, 2)
             //p2 = (2, 1)
-            //p1.GetHashCode() = 3      // Problem, Equals false and same hash
+            //p1.GetHashCode() = 3      // Problem, Equals false and same hash (but could be a collision)
             //p2.GetHashCode() = 3
             //p1.Equals(p2) ? False
             //b = (1, 2)
             //b = (2, 1)
-            // Deixa inserir p1 e p2 porque sãodiferentes em conteúdo 
+            // Deixa inserir p1 e p2 porque são diferentes em conteúdo 
             // Trata-se de uma colisão
             //pointHashSet.Contains(p1) = True
             //After p1.SetX(10);
@@ -194,7 +199,11 @@ namespace EqualsAndGetHashCode
             //pointHashSet.Contains(p1) = True
             //pointHashSet.Remove(p1)->True    // OK, p1 was found in hashed collection
             //pointHashSet.Remove(p1)->False
-            // pointHashSet.Remove(p2) -> True // OK, p1 was found in hashed collection
+            // pointHashSet.Remove(p2) -> True // OK, p2 was found in hashed collection
+            //
+            // Note: We cannot change fields with Setters because fields are readonly
+            // (we should not change the contents of the readonly object also)
+            //
             //p1 = (1, 2)
             //p2 = (2, 1)
             //p1.GetHashCode() = 63     // OK, Equals false => different hash

@@ -15,15 +15,15 @@ namespace IdentityAndEquality
         public Point2D(int x, int y) { this.x = x; this.y = y; }
 
         // Overload do operator==
-        // public static bool operator==(Object o, Point2D p)
-        // {            
-        // Console.WriteLine("[Point2D] calling operator==");
-        // return false; // not correctly implemented
-        // }
-        // public static bool operator !=(Object o, Point2D p)
-        // {
-        // return !(o == p);
-        // }
+        public static bool operator==(Object o, Point2D p)
+        {            
+             Console.WriteLine("[Point2D] calling operator==");
+             return false; // not correctly implemented
+        }
+        public static bool operator !=(Object o, Point2D p)
+        {
+            return !(o == p);
+        }
     }
 
     class OpEqualityTest
